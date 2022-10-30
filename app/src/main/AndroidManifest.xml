@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moviePlex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieApp">
+        <activity
+            android:name="com.example.moviePlex.ui.OnboardActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.example.moviePlex.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.example.moviePlex.ui.CastActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.ImageDetailsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.example.moviePlex.ui.ImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.VideoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.VideoDetailsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.example.moviePlex.ui.DetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.NewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.moviePlex.ui.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.moviePlex.ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
